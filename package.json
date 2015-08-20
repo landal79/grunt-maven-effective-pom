@@ -1,0 +1,28 @@
+{
+  "name": "grunt-maven-effective-pom",
+  "version": "0.0.1",
+  "description": "Loads the effective maven pom as json object into grunt config",
+  "keywords": [
+    "java",
+    "m2",
+    "mvn",
+    "maven"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Alex Landini"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": "sindresorhus/grunt-maven-effective-pom",
+  "dependencies": {
+    "xml2js": "^0.4.10",
+    "fs": "0.0.2"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
