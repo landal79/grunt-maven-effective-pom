@@ -15,10 +15,10 @@
   "files": [
     "index.js"
   ],
-  "repository": "sindresorhus/grunt-maven-effective-pom",
+  "repository": "landal79/grunt-maven-effective-pom",
   "dependencies": {
     "xml2js": "^0.4.10",
-    "fs": "0.0.2"
+    "fs": "~0.0.2"
   },
   "devDependencies": {
   },
