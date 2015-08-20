@@ -16,4 +16,4 @@ module.exports = function (grunt) {
 
     grunt.config('pom',pom);
 
-}
+};
