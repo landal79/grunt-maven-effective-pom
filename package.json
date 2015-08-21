@@ -1,7 +1,8 @@
 {
   "name": "grunt-maven-effective-pom",
-  "version": "0.0.4",
+  "homepage": "http://github.com/landal79/grunt-maven-effective-pom",
   "description": "Loads the effective maven pom as json object into grunt config",
+  "version": "0.0.4",
   "keywords": [
     "java",
     "m2",
@@ -13,9 +14,12 @@
     "name": "Alex Landini"
   },
   "files": [
-    "index.js"
+    "tasks"
   ],
-  "repository": "landal79/grunt-maven-effective-pom",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/landal79/grunt-maven-effective-pom.git"
+  },
   "dependencies": {
     "xml2js": "^0.4.10",
     "fs": "~0.0.2"
@@ -23,6 +27,9 @@
   "devDependencies": {
     "grunt": "^0.4.2",
     "grunt-cli": "^0.1.13"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
   },
   "engines": {
     "node": ">=0.10.0"
