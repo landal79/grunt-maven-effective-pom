@@ -16,7 +16,8 @@ module.exports = function (grunt) {
     grunt.registerMultiTask('mavenEffectivePom', 'Loads effective maven pom', function () {
 
         var options = this.options({
-            file : "target/effective-pom.xml"
+            file : "target/effective-pom.xml",
+	    varName : 'pom'
         });
 
         grunt.verbose.writeflags(options, "Options");
@@ -24,7 +25,7 @@ module.exports = function (grunt) {
         var parser = new xml2js.Parser({explicitArray: false});
         var pom = null;
         parser.addListener('end', function (result) {
-            grunt.config.set('pom', result);
+            grunt.config.set(options.varName, result);
             grunt.verbose.writeln('loaded maven pom for project: ' + grunt.config('pom.project.artifactId'));
         });
 
